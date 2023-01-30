@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.widgets import Button
 from matplotlib.animation import FuncAnimation
 from matplotlib.widgets import Slider
 
@@ -48,5 +49,6 @@ slider_rule = Slider(ax_rule, 'Rule', 0, 255, valinit=RULE, valstep=1)
 slider_rule.on_changed(update_rule)
 
 # Create the animation and display the plot
-ani = FuncAnimation(fig, update, frames=range(1, ITERATIONS), repeat=True, interval=10)
+update_cells()
+#ani = FuncAnimation(fig, update, frames=range(1, ITERATIONS), repeat=True, interval=10)
 plt.show()
