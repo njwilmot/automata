@@ -30,8 +30,8 @@ def update(num):
 
 # Initial values for rule, number of iterations, and number of cells
 RULE = 30
-ITERATIONS = 400
-CELLS = 500
+ITERATIONS = 800
+CELLS = 1000
 
 cells = np.zeros((ITERATIONS, CELLS), dtype=np.uint8)
 cells[0, CELLS // 2] = 1  # initialize middle cell to 1
